@@ -1,0 +1,345 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter";
+
+}
+#cabeca{
+    background-color: #303030;
+    background-size: calc(max-device-width * 0.98);
+    width:auto;
+    height: 475px;
+    margin: 0;
+    padding: 0;
+}
+  
+#titulocabeca{
+    font-size: 60px;
+    color: #ffffff;
+    padding-top: 206px;
+    padding-left: 62px;
+    font-family: "inter";
+}
+#textocabeca{
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 16px;
+    padding-left: 62px;
+    font-family: "Inter";
+}
+#menuinformativo{
+    height: 235px;
+    background-color: aliceblue;
+    background-size: calc(max-device-width * 0.98);
+    padding: 40px;
+    display: grid;
+    grid-template-areas: "l m r";
+    animation-duration: 0.5s;
+    animation-name: ladinho;
+    
+}
+@keyframes ladinho {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+/* animação para dar uma diferenciada */
+#if1{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    grid-area: "l";
+
+}
+#if2{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    grid-area: "m";
+
+}
+#if3{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    grid-area: "r";
+
+}
+.icone{
+    margin: 70px 0px 70px 0px;
+    align-items: center;
+    padding: 0px;
+}
+#sessao{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: auto;
+    animation-duration: 0.5s;
+    animation-name: ladinho2;
+    
+}
+/* animação para dar uma diferenciada */
+@keyframes ladinho2 {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+#texto{
+    display: auto;
+    margin: 250px 50px 150px 20px;
+    padding-left: 200px;
+    padding-right: 0px;
+    align-items:end;
+    font-family: "Inter";
+
+}
+.box{
+    width: 500px;
+    height: 590px;
+    border-radius: 6%;
+}
+
+.box-image img{
+    display: flex;
+    transition: 0.7 ease-in-out;
+    transform: translateX();
+    width: 500px;
+    height: 590px;
+    border-radius: 6%;
+    position:absolute;
+}
+
+.images{
+    display: flex;
+    margin: 90px 20px 90px 20px;
+    padding-right: 40px;
+}
+#titulosessao{
+    font-size: 40px;
+    font-family: "inter";
+    color: black;
+}
+#textosessao{
+    font-size: 24px;
+    font-family: "inter";
+    color: #303030;
+}
+#formumlario{
+    background-color: #303030;
+    background-size: calc(max-device-width * 0.98);
+    height: 638px;
+    text-align: center;
+}
+#tituloform{
+    font-size: 32;
+    color:#ffffff;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    background-color: #ffffff;
+    color: black;
+    margin: 25px;
+    border: 0px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+button{
+    width: 260px;
+    height: 40px;
+    background-color: #C07212;
+    margin: 15px;
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#a08324;
+    color: white;
+    transform: translateY(-7px);
+    box-shadow:0px 15px 20px 0px #4427007e;
+}
+/* segundo html */
+#cabecaGT{
+    padding: 20px;
+    font-family: "Cedarville Cursive", cursive; 
+    background-color: #745020c7;
+    color: #310101;
+    height: 180px;
+    font-size: 25pt;
+    text-align: center;
+
+}
+#aguarde{
+    font-size: 18pt;
+    text-align: center;
+    color: aliceblue;
+    background-image: url(./svgs/essa.gif);
+    background-size: calc(180%);
+    width: auto * max-width;
+    height: 900px;
+    font-family: "Cedarville Cursive";
+    font-style: normal;
+}
+form{
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    
+}
+/* animação para dar uma diferenciada */
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+/* adaptação reponsiva para  mobile*/
+@media only screen and (max-device-width: 1000px) {
+    #cabeca{ 
+    display: auto;
+    background-image: calc(auto);
+    width: max-device-width * 5px;
+    height: mas-device-height * 5px;
+    align-content: center;
+    text-align: center;
+    
+    }
+    #titulocabeca{
+        font-size: calc(max-device-width * 1.8%);
+        margin: 0px;
+        text-align: center;
+        padding: 5px;
+    }
+    #textocabeca{
+        font-size: calc(max-device-width * 1.8%);
+        margin: 0px;
+        text-align: center;
+        padding: 5px;
+    }
+} 
+@media only screen and  (max-device-width: 1000px){
+    #menuinformativo{
+        display: grid;
+        grid-template-areas: "l" "m" "r";
+        grid-template-columns: 1fr;
+        width: calc(max-device-width * auto);
+        height:850px ;
+        background-color: aliceblue;
+        margin-bottom: calc(max-device-width * auto);
+        
+    }
+    
+    #if1{
+        display: flex;
+        align-items: center;
+        grid-area: "l";
+        background-color: aliceblue;
+        background-size: auto;
+        
+    }
+
+    #if2{
+        display: flex;
+        align-items: center;
+        
+        grid-area: "m";
+        background-color: aliceblue;
+        margin: calc(max-device-width * auto);
+        
+    }
+    #if3{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        grid-area: "m";
+        background-color: aliceblue;
+        margin: calc(max-device-width * auto);
+       
+    }
+    
+}
+@media only screen and  (max-device-width: 1000px){
+    #sessao{
+        grid-template-areas: "l" "r";
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 550px;
+        padding: 20px;
+        height: 1000px;
+        width: 400px;
+        align-items: center;
+        
+    }
+    #texto{
+        display: auto;
+        margin: 0px;
+        padding: 0px;
+        align-items:center;
+        text-align: center;
+        width: 400px;
+    
+    }
+    #titulosessao{
+        font-size: 35px;
+        margin: 0px;
+        padding: 0px;
+        align-items:center;
+        text-align: center;
+
+    }
+    #textosessao{
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+        align-items:center;
+        text-align: center;
+
+    }
+    .images{
+        margin: 80px 0px 30px 5px;
+        padding: 0px;
+        align-items: center;
+
+    }
+    
+        .box{
+        width: 410px;
+        height: 700px;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+    
+    .box-image img{
+        width: 410px;
+        height: 700px;
+        position: absolute;
+
+    }
+    
+}
